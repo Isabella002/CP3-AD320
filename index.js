@@ -1,3 +1,11 @@
+/** 
+ Name: Isabella Mester
+ Date: November 7, 2023
+ Description: This is the JavaScript for the Bored API webpage that will fetch data
+ from a bored api and incorporate it into my webpage to come up with things to do 
+ when you are bored. 
+ **/
+
 "use strict";
 
 const BoredApp = (function () {
@@ -8,7 +16,7 @@ const BoredApp = (function () {
                 throw new Error('Network response was not ok.');
             }
             const data = await response.json();
-            console.log(data); // For testing, check the console for fetched data
+            console.log(data); // For testing
             displayActivity(data);
         } catch (error) {
             handleError(error);
@@ -22,7 +30,7 @@ const BoredApp = (function () {
                 throw new Error('Network response was not ok.');
             }
             const data = await response.json();
-            console.log(data); // For testing, check the console for fetched data
+            console.log(data); // For testing
             displayActivity(data);
         } catch (error) {
             handleError(error);
@@ -36,7 +44,7 @@ const BoredApp = (function () {
                 throw new Error('Network response was not ok.');
             }
             const data = await response.json();
-            console.log(data); // For testing, check the console for fetched data
+            console.log(data); // For testing
             displayActivity(data);
         } catch (error) {
             handleError(error);
